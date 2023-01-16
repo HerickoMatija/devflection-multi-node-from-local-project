@@ -22,5 +22,9 @@ After that we go back up to the root folder
 And we run docker-compose up to start up 3 instances of the app with a nginx load-balancer.
 
     docker-compose up
+    
+And then you can test that we have 3 running instances and a load-balancer by opening the following url multiple times and observing the UUID: 
+
+    http://localhost:4000/app/hello
 
 You can read more about the idea in the accompanying [blog post](https://devflection.com/posts/2023-01-16-docker-compose-multi-node-local-project).
