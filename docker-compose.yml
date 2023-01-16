@@ -11,7 +11,8 @@ services:
       - "4000:4000"
   backend:
     image: tomcat:9.0
-    scale: 3
+    deploy:
+      replicas: 3
     expose:
       - "8080"
     volumes:
